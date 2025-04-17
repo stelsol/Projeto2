@@ -1,0 +1,92 @@
+/*  .cabeca1 .Categorias .opcoes .busca */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Cores do site */
+    --cor1:#074073;
+    --cor2:#F2B705;
+    --cor3:#F2A71B;
+    --cor4:#F27405;
+    --cor5:#F2F2F2;
+
+    /* Fontes e tamanhos */
+    --fontsite:'Montserrat',Arial,sans-serif;
+    --font-size-padrao: 1rem;
+    --font-size-medio: 1.5rem;
+    --font-size-grande: 2rem;
+    --cor-branca: var(--cor5);
+    --cor-preta: #000000;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: var(--fontsite);
+    color:var(--cor5) ;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor5);
+    overflow-x: hidden;
+}
+.cabeca1{
+    background-color: var(--cor1);
+    padding: 10px 30px;
+}
+.div{
+    /* margin: 0px 0px 0px 200px; */
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.categorias{
+    display: flex;
+    gap: 50px;
+    font-size: var(--font-size-medio);
+    list-style: none;
+}
+.material-symbols-outlined {
+    font-size: 50px;
+    color:var(--cor5);
+    /* background-color: #F27405; */
+    /* border-radius: 50%; */
+}
+
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+.conteudo{
+    /* main/largura do site  */
+    background-color:var(--cor5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+.oferta{
+    width:90%;
+    margin: 20px;
+    background-color: #000000;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.promo{
+    background-color: var(--cor2);
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
+.areaO{
+    color: var(--cor5);
+}
