@@ -113,6 +113,22 @@ html,body{
     align-items: center;
     text-align: center;
 }
+.ofertaD:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    z-index: 10; 
+}
+
+.pro {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.ofertaD:hover .pro {
+    transform: scale(1.1); 
+}
 .pro{
     width: 80%;
 }
