@@ -181,6 +181,7 @@ html,body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-flow: row wrap;
     /* border-top: 2px solid #f2f2f228; */
 }
 .logof{
