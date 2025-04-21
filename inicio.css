@@ -67,6 +67,7 @@ html,body{
 .container{
     max-width: 80%;
     margin: auto;
+    /* border: 1px solid black; */
 }
 .conteudo{
     /* main/largura do site  */
@@ -84,15 +85,20 @@ html,body{
     display: flex;
     flex-direction: column;
 }
-/* Ofertas do dia */
-.imagem{
-    color: var(--cor-preta);
-    height: 200px;
+/* Carrossel */
+
+/* Estilos do Carrossel */
+
+.banner{
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
     background-color: #d1cecead;
     border-radius: 5px;
     box-shadow: 1px 2px 3px #00000044;
-
+    
 }
+/* Ofertas do dia */
 .cards{
     display: flex;
     flex-wrap: wrap;
@@ -186,13 +192,13 @@ html,body{
     height: 80px;box-shadow: 1px 2px 3px #00000044;
 }
 /* Estilização Footer */
-.final{
+.main-footer{
     background-color: var(--cor1);
     display: flow-root;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.conteudof{
+.footer-content{
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -203,20 +209,20 @@ html,body{
 .logof{
     width: 80px;
 }
-.footers{
+.footer-section{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: start;
     
 }
-.footers h4 {
+.footer-section h4 {
     width: 100%; 
     text-align: left; 
     margin: 0 0 15px 0; 
     color: var(--cor5); 
     font-size: 1.1rem;
 }
-.linksf:hover{
+.footer-links:hover{
     text-decoration: underline;
 }
