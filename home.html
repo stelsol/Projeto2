@@ -6,7 +6,7 @@
     <title>Promovale</title>
     <link rel="shortcut icon" href="img/LogoPromoVale_pequena.webp" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="estilopags/inicio.css">
     <!-- <link rel="stylesheet" href="responsivo.css" media="screen and (max-width: 600px)">
 </head> -->
 <body>
@@ -17,7 +17,7 @@
                 <img src="img/LogoPromoVale_pequena.webp" alt="logo" class="logo">
             </a>
             <ul class="categorias">
-                <li class="opcoes"><a href="#">Categorias</a></li>
+                <li class="opcoes"><a href="#">Mercado</a></li>
                 <li class="opcoes"><a href="#">Cupons</a></li>
                 <li class="opcoes"><a href="#">Sobre nós</a></li>
             </ul>
@@ -29,9 +29,35 @@
     <main class="container">  
         <!-- O container esta conectado com o menu, podemos criar os conteudos tranquilamente -->
         <div class="conteudo">
-            <section class="PadraoS carrossel">
+            <section class="PadraoS ">
                 <!-- Sera um carrossel de imagens. mudar nome para Carrosel após ter as imagens -->
-                <img src="img/Banner.webp" alt="Em-breve" class="banner">
+                <div class="carrossel">
+                    <!-- Slides -->
+                    <div class="carrossel-container">
+                        <div class="slide">
+                            <img src="img/Banner.webp" alt="Slide 1">
+                        </div>
+                        <div class="slide">
+                            <img src="img/banner2.webp" alt="Slide 2">
+                        </div>
+                        <div class="slide">
+                            <img src="img/banner3.webp" alt="Slide 3">
+                        </div>
+                    </div>
+            
+                    <!-- Botões de navegação -->
+                    <div class="carrossel-nav">
+                        <button class="nav-button prev">❮</button>
+                        <button class="nav-button next">❯</button>
+                    </div>
+            
+                    <!-- Indicadores (bolinhas) -->
+                    <div class="indicadores">
+                        <span class="indicador active" data-index="0"></span>
+                        <span class="indicador" data-index="1"></span>
+                        <span class="indicador" data-index="2"></span>
+                    </div>
+                </div>
                 <!-- <img src="img/Banner.webp" alt="Banner" class="imagem"> -->
             </section>
             <section class="PadraoS">
@@ -99,12 +125,12 @@
                     </div>
             </section>
             <section class="PadraoS ">
-                <h3 class="areaO">CATEGORIAS</h3>
+                <h3 class=" mercadoT">MERCADO</h3>
                 <div class="catpro">
                         <div class="ns">
                             <a href="#" class="grupo1">
                                 <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
-                                <p>Alimentos</p>
+                                <p>Mercearia</p>
                             </a>
                         </div>
 
@@ -130,8 +156,9 @@
                         </div>
                 </div>
             </section>
+            <!-- Trocar as logos dos mercados parceiros -->
             <section class="PadraoS parceiros">
-                <h3 class="areaO">MARCAS PARCEIRAS</h3>
+                <h3 class="areaO">REDES PARCEIRAS</h3>
                 <div class="sparceiros">
                     <img src="img/carrefour (1).webp" alt="" class="marca">
                     <img src="img/carrefour (1).webp" alt="" class="marca">
@@ -154,13 +181,13 @@
             </section>
             <section class="footer-section linkmenu">
                 <h4>Links rápidos</h4>
-                <a href="#" class="footer-links">Categorias</a>
+                <a href="#" class="footer-links">Mercado</a>
                 <a href="#" class="footer-links">Cupons</a>
                 <a href="#" class="footer-links">Sobre Nós</a>
             </section>
             <section class="footer-section linkcat">
                 <h4>Links Categorias</h4>
-                <a href="#" class="footer-links">Alimentos</a>
+                <a href="#" class="footer-links">Mercearia</a>
                 <a href="#" class="footer-links">Hortifruti</a>
                 <a href="#" class="footer-links">Bebidas</a>
                 <a href="#" class="footer-links">Produtos de limpeza</a>
@@ -172,5 +199,6 @@
             </section>
         </div>
     </footer>
+    <script src="interacoes.js"></script>
 </body>
 </html>
