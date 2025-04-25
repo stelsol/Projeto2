@@ -77,11 +77,27 @@ html,body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .sobre-main{
     display: flex;
+    justify-content:center;
     align-items: center;
+    /* padding: 10px; */
+    margin: 20px 0px 40px 0px;
+    /* background-color: var(--cor4); */
+}
+.empresa{
+    width: 60%;
+
+}
+.promovale{
+    background-color: #074073;
+    width: 30%;
+    padding: 30px;
+}
+.titulo{
+    font-size: 2em;
 }
 .cor{
     color: var(--cor-preta);
@@ -89,9 +105,44 @@ html,body{
 .texto{
     width: 50%;
     text-align: justify;
+    margin: 10px 0px 30px 0px;
 }
-
-
+.marcas-parceiras{
+    /* padding: 20px 0px 20px 0px; */
+    margin: 20px 0px 30px 0px;
+    
+}
+.texto-centro{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+.logos-p{
+    display: flex;
+    justify-content: space-around;
+}
+.proposta{
+    width: 100%;
+    /* text-align: center; */
+    background-color:#074173ec;
+    border: 3px solid #052038;
+    border-radius: 15px;
+    margin-bottom:50px;
+}
+.pre-form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: center;
+    gap: 20px;
+    margin: 50px;
+}
+.botao{
+    background-color: var(--cor4);
+    border: 2px solid #cc6d1b ;
+    border-radius: 15px;
+    padding: 20px;
+}
 
 /* Estilização Footer */
 .main-footer{
@@ -110,6 +161,7 @@ html,body{
 }
 .logof{
     width: 80px;
+    padding-left: 10px;
 }
 .footer-section{
     display: flex;
