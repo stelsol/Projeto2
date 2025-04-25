@@ -26,15 +26,18 @@
     box-sizing:border-box;
     text-decoration: none;
     font-family: var(--fontsite);
-    color:var(--cor5) ;
 }
 html,body{
     width: 100vw;
     height: 100vh;
     background-color: var(--cor5);
+    color:var(--cor5) ;
     overflow-x: hidden;
 }
-
+header a,
+footer a{
+    color:var(--cor5) ;
+}
 /* Estilização da Header */
 .cabeca1{
     background-color: var(--cor1);
