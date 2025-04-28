@@ -26,18 +26,16 @@
     box-sizing:border-box;
     text-decoration: none;
     font-family: var(--fontsite);
+    color:var(--cor5) ;
+    
 }
-html,body{
+body{
     width: 100vw;
     height: 100vh;
     background-color: var(--cor5);
-    color:var(--cor5) ;
     overflow-x: hidden;
 }
-header a,
-footer a{
-    color:var(--cor5) ;
-}
+
 /* Estilização da Header */
 .cabeca1{
     background-color: var(--cor1);
@@ -190,13 +188,16 @@ footer a{
 .cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 15px;
 }
 .ofertaD{
     /* background-color: var(--cor2); */
-    width: 200px;
+    width: 15%;
     /* height: 100px; */
     margin-top:10px;
+
+    padding: 5px;
     border-radius: 10px;
     border: 1px solid #00000044;
     box-shadow: 1px 2px 3px #00000044;
@@ -214,7 +215,7 @@ footer a{
 }
 
 .pro {
-    width: 100%;
+    width: 90%;
     /* height: 60%; */
     object-fit: cover;
     transition: transform 0.5s ease;
@@ -252,20 +253,24 @@ footer a{
     align-items: start;
     flex-flow: row wrap;
     margin-top:10px;
-    gap: 10px;
+    gap: 2.7%;
 }
 .catpro p {
     color: var(--cor-preta);
     font-weight: bold;
+    padding-top: 10px;
 }
 .grupo1{
     text-align: center;
     text-decoration: none;
 }
 .catimg{
-    width: 348px;
+    width: 350px;
     border-radius: 5px;
     box-shadow: 1px 2px 3px #00000044;
+}
+.catp{
+    padding-top: 10px;
 }
 /* Estilização logo parceiros */
 .sparceiros{
@@ -277,13 +282,13 @@ footer a{
     gap: 25px;
     margin: 10px 0px;
 }
-.marca{
+/* .marca{
     background-color: #d1cecead;
     width: 90px;
     height: 90px;
     border-radius: 50%;
     box-shadow: 1px 2px 3px #00000044;
-}
+} */
 /* Estilização Footer */
 .main-footer{
     background-color: var(--cor1);
