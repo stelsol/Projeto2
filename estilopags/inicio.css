@@ -40,6 +40,11 @@ body{
 .cabeca1{
     background-color: var(--cor1);
     padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 /* .div{
     margin: 0px 0px 0px 200px; 
@@ -76,6 +81,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 100px;
     /* border: 1px solid black; */
 }
 /* PadraoS = Configuração padrão para a section */
@@ -217,6 +223,7 @@ body{
 .pro {
     width: 90%;
     /* height: 60%; */
+    padding: 10px;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
@@ -226,6 +233,7 @@ body{
 }
 .descricao{
     color: var(--cor-preta);
+    padding-top: 5px;
 }
 .preco{
     padding-top: 10px;
@@ -253,7 +261,7 @@ body{
     align-items: start;
     flex-flow: row wrap;
     margin-top:10px;
-    gap: 2.7%;
+    gap: 2%;
 }
 .catpro p {
     color: var(--cor-preta);
@@ -265,7 +273,7 @@ body{
     text-decoration: none;
 }
 .catimg{
-    width: 350px;
+    width: 255px;
     border-radius: 5px;
     box-shadow: 1px 2px 3px #00000044;
 }
@@ -294,7 +302,7 @@ body{
     background-color: var(--cor1);
     display: flow-root;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 .footer-content{
     padding-top: 10px;

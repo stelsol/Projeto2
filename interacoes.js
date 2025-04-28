@@ -1,3 +1,4 @@
+
 //! Quero estudar mais este script e entender melhor a lógica dele 
 
 document.addEventListener('DOMContentLoaded', () => {

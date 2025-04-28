@@ -39,6 +39,11 @@ html,body{
 .cabeca1{
     background-color: var(--cor1);
     padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 /* .div{
     margin: 0px 0px 0px 200px; 
@@ -78,6 +83,7 @@ html,body{
     flex-direction: column;
     align-items: center;
     padding: 60px;
+    padding-top: 100px;
     /* border: 1px solid black; */
 }
 .sobre-main{
@@ -98,8 +104,9 @@ html,body{
 }
 
 .texto{
-    width: 50%;
+    width: 80%;
     text-align: justify;
+    text-indent: 30px;
     margin: 10px 0px 30px 0px;
     color: var(--cor-preta);
 }
@@ -148,7 +155,7 @@ html,body{
 
 }
 .pre-form p{
-    width: 40%;
+    width: 60%;
     text-align: center;
 
 }
@@ -159,13 +166,15 @@ html,body{
     border-radius: 15px;
     padding: 20px;
 }
-
+.botao:hover{
+    background-color: #074173b7;
+}
 /* Estilização Footer */
 .main-footer{
     background-color: var(--cor1);
     display: flow-root;
     padding-top: 20px;
-    padding-bottom: 8px;
+    padding-bottom: 15px;
 }
 .footer-content{
     padding-top: 10px;
