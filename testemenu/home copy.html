@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promovale</title>
+    <link rel="shortcut icon" href="img/LogoPromoVale_pequena.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="teste.css">
+    <!-- <link rel="stylesheet" href="responsivo.css" media="screen and (max-width: 600px)">-->
+</head> 
+<body>
+    <header class="cabeca1" >
+        <nav class="menu container">
+            <!-- Está conectado aqui -->
+            <a href="home.html">
+                <img src="img/LogoPromoVale_pequena.webp" alt="logo" class="logo">
+            </a>
+            <span id="mburguer" class="material-symbols-outlined" onclick="clickmenu(event)">menu</span>
+            <ul id="itens" class="categorias">
+                <li class="opcoes"><a href="#">Mercado</a></li>
+                <li class="opcoes"><a href="#">Cupons</a></li>
+                <li class="opcoes"><a href="sobrenos.html">Sobre nós</a></li>
+            </ul>
+            <div class="busca">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+        </nav>
+    </header>
+    <main class="container">  
+        <!-- O container esta conectado com o menu, podemos criar os conteudos tranquilamente -->
+        <div class="conteudo">
+            <section class="PadraoS ">
+                <!-- Sera um carrossel de imagens. mudar nome para Carrosel após ter as imagens -->
+                <div class="carrossel">
+                    <!-- Slides -->
+                    <div class="carrossel-container">
+                        <div class="slide">
+                            <img src="img/Banner.webp" alt="Slide 1">
+                        </div>
+                        <div class="slide">
+                            <img src="img/banner2.webp" alt="Slide 2">
+                        </div>
+                        <div class="slide">
+                            <img src="img/banner3.webp" alt="Slide 3">
+                        </div>
+                    </div>
+            
+                    <!-- Botões de navegação -->
+                    <div class="carrossel-nav">
+                        <button class="nav-button prev">❮</button>
+                        <button class="nav-button next">❯</button>
+                    </div>
+            
+                    <!-- Indicadores (bolinhas) -->
+                    <div class="indicadores">
+                        <span class="indicador active" data-index="0"></span>
+                        <span class="indicador" data-index="1"></span>
+                        <span class="indicador" data-index="2"></span>
+                    </div>
+                </div>
+                <!-- <img src="img/Banner.webp" alt="Banner" class="imagem"> -->
+            </section>
+            <section class="PadraoS">
+                <h3 class="areaO">OFERTAS DO DIA</h3>
+                    <div class="cards">
+                            <a href="#" class="ofertaD">
+
+                                <div class="produto">
+                                    <img src="img/hortfruti/Alface Americana.webp" alt="Alface Americana" class="pro">
+                                    <p class="descricao">Chocolate ao leite diamante negro 80g</p>
+                                    <p class="preco">R$6,99</p>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="ofertaD">
+                                
+                                <div class="produto">
+                                    <img src="img/hortfruti/alho-roxo 1.webp" alt="Alho roxo" class="pro">
+                                    <p class="descricao">Chocolate ao leite diamante negro 80g</p>
+                                    <p class="preco">R$6,99</p>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="ofertaD">
+                                
+                                <div class="produto">
+                                    <img src="img/bebidas/Energetico.webp" alt="Monster Energético" class="pro">
+                                    <p class="descricao">Chocolate ao leite diamante negro 80g</p>
+                                    <p class="preco">R$6,99</p>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="ofertaD">
+                                
+                                <div class="produto">
+                                    <img src="img/limpeza/sabao-em-po.webp" alt="Sabão em pó" class="pro">
+                                    <p class="descricao">Chocolate ao leite diamante negro 80g</p>
+                                    <p class="preco">R$6,99</p>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="ofertaD">
+                                
+                                <div class="produto">
+                                    <img src="img/mercearia/Azeite de Oliva.webp" alt="Azeite" class="pro">
+                                    <p class="descricao">Chocolate ao leite diamante negro 80g</p>
+                                    <p class="preco">R$6,99</p>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="ofertaD">
+                                
+                                <div class="produto">
+                                    <img src="img/Chocolate.webp" alt="nescau" class="pro">
+                                    <p class="descricao">Chocolate ao leite diamante negro 80g</p>
+                                    <p class="preco">R$6,99</p>
+                                </div>
+
+                            </a>
+                    </div>
+            </section>
+            <section class="PadraoS ">
+                <h3 class=" mercadoT">MERCADO</h3>
+                <div class="catpro">
+                        <div class="ns">
+                            <a href="#" class="grupo1">
+                                <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
+                                <p >Mercearia</p>
+                            </a>
+                        </div>
+
+                        <div class="ns">
+                            <a href="#" class="grupo1">
+                                <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
+                                <p >Bebidas</p>
+                            </a>
+                        </div>
+
+                        <div class="ns">
+                            <a href="#" class="grupo1">
+                                <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
+                                <p >Produtos de limpeza</p>
+                            </a>
+                        </div>
+
+                        <div class="ns">
+                            <a href="#" class="grupo1">
+                                <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
+                                <p >Hortifruti</p>
+                            </a>
+                        </div>
+                </div>
+            </section>
+            <!-- Trocar as logos dos mercados parceiros -->
+            <section class="PadraoS parceiros">
+                <h3 class="areaO">REDES PARCEIRAS</h3>
+                <div class="sparceiros">
+                    <img src="img/70x56_carrefour.webp" alt="Logo carrefour" class="marca">
+                    <img src="img/80x80_logo Max.webp" alt="" class="marca">
+                    <img src="img/100x100_logo Tenda.webp" alt="" class="marca">
+                    <img src="img/100x100_semar-supermercados-logo.webp" alt="" class="marca">
+                    <img src="img/100x21_Extra_logo.webp" alt="" class="marca">
+                    <img src="img/100x28_atacadao-logo.webp" alt="" class="marca">
+                    <img src="img/100x28_logo Nagumo.webp" alt="" class="marca">
+                    <img src="img/100X65_logo roldao.webp" alt="" class="marca">
+                    <img src="img/100x75_Logo Shibata.webp" alt="" class="marca">
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <section class="logolink ">
+                <a href="#"><img src="img/LogoPromoVale_pequena.webp" alt="Logo LogoPromoVale_pequena" class="logof"></a>
+            </section>
+            <section class="footer-section linkmenu">
+                <h4>Links rápidos</h4>
+                <a href="#" class="footer-links">Mercado</a>
+                <a href="#" class="footer-links">Cupons</a>
+                <a href="sobrenos.html"class="footer-links">Sobre Nós</a>
+            </section>
+            <section class="footer-section linkcat">
+                <h4>Links Categorias</h4>
+                <a href="#" class="footer-links">Mercearia</a>
+                <a href="#" class="footer-links">Hortifruti</a>
+                <a href="#" class="footer-links">Bebidas</a>
+                <a href="#" class="footer-links">Produtos de limpeza</a>
+            </section>
+            <section class="footer-section contato">
+                <h4>Contatos</h4>
+                <a href="#" class="footer-links">Promovale@gmail.com</a>
+                <a href="#" class="footer-links">(12)98222-3333</a>
+            </section>
+        </div>
+        
+    </footer>
+    <script src="interacoes.js"></script>
+</body>
+</html>
