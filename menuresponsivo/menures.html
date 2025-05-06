@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="shortcut icon" href="img/LogoPromoVale_pequena.webp" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="cssres.css">
 </head>
-<body>
-    <header class="menu"> 
-        <nav class="nav-bar">
-            <div class="logo">
-                <a href="#"><img src="img/LogoPromoVale_pequena.webp" alt="logo"></a>
+<body onresize=" mudoutamanho()">
+    <header class="menu "> 
+        <nav class="nav-bar conteudo">
+            <div class="container-logo">
+                <a href="#"><img src="img/LogoPromoVale_pequena.webp" alt="logo" class="logo"></a>
             </div>
             <div class="nav-list">
                 <ul>
@@ -24,7 +24,24 @@
             <div class="buscar">
                 <span class="material-symbols-outlined">search</span>
             </div>
+            <div class="hamburguer hb-funcoes">
+                <span class="material-symbols-outlined" onclick="menushow()">menu</span>
+            </div>
         </nav>
+        <div class="nav-list-segunda open">
+            <ul>
+                <li class="nav-links"><a href="#">Mercado</a></li>
+                <li class="nav-links"><a href="#">Cupons</a></li>
+                <li class="nav-links"><a href="#">Sobre nós</a></li>
+            </ul>
+            <div class="buscar-segunda">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+        </div>
     </header>
+    <main class="conteudo">
+        <div class="teste">oi</div>
+    </main>
+    <script src="menu.js"></script>
 </body>
 </html>

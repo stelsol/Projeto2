@@ -1,4 +1,18 @@
-
+//menu hamburguer
+function mudoutamanho(){
+    let menumobile = document.querySelector('.nav-list-segunda') 
+    if(window.innerWidth >= 900){
+        menumobile.style.display = 'none'
+    }
+    }
+function menushow() {
+    let menumobile = document.querySelector('.nav-list-segunda') 
+    if(menumobile.style.display =='block'){
+        menumobile.style.display = 'none'
+    }else{
+        menumobile.style.display = 'block';
+    }
+}
 //! Quero estudar mais este script e entender melhor a lógica dele 
 
 document.addEventListener('DOMContentLoaded', () => {
