@@ -7,19 +7,19 @@
     <link rel="shortcut icon" href="img/LogoPromoVale_pequena.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilopags/inicio.css">
-    <!-- <link rel="stylesheet" href="responsivo.css" media="screen and (max-width: 600px)">-->
 </head> 
 <body onresize=" mudoutamanho()">
+    <!-- Menu responsivo -->
     <header class="menu "> 
         <nav class="nav-bar container">
             <div class="container-logo">
-                <a href="#"><img src="img/LogoPromoVale_pequena.webp" alt="logo" class="logo"></a>
+                <a href="home.html"><img src="img/LogoPromoVale_pequena.webp" alt="logo" class="logo"></a>
             </div>
             <div class="nav-list">
                 <ul>
                     <li class="nav-links"><a href="#">Mercado</a></li>
                     <li class="nav-links"><a href="#">Cupons</a></li>
-                    <li class="nav-links"><a href="#">Sobre nós</a></li>
+                    <li class="nav-links"><a href="sobrenos.html">Sobre nós</a></li>
                 </ul>
             </div>
             <div class="buscar">
@@ -29,11 +29,11 @@
                 <span class="material-symbols-outlined" onclick="menushow()">menu</span>
             </div>
         </nav>
-        <div class="nav-list-segunda open">
+        <div class="nav-list-segunda ">
             <ul>
                 <li class="nav-links"><a href="#">Mercado</a></li>
                 <li class="nav-links"><a href="#">Cupons</a></li>
-                <li class="nav-links"><a href="#">Sobre nós</a></li>
+                <li class="nav-links"><a href="sobrenos.html">Sobre nós</a></li>
             </ul>
             <div class="buscar-segunda">
                 <span class="material-symbols-outlined">search</span>
@@ -43,10 +43,9 @@
     <main class="container">  
         <!-- O container esta conectado com o menu, podemos criar os conteudos tranquilamente -->
         <div class="conteudo">
-            <section class="PadraoS ">
-                <!-- Sera um carrossel de imagens. mudar nome para Carrosel após ter as imagens -->
+            <section class="PadraoS Carrosel-w">
+                <!-- Carrosel de imagens -->
                 <div class="carrossel">
-                    <!-- Slides -->
                     <div class="carrossel-container">
                         <div class="slide">
                             <img src="img/Banner.webp" alt="Slide 1">
@@ -72,9 +71,9 @@
                         <span class="indicador" data-index="2"></span>
                     </div>
                 </div>
-                <!-- <img src="img/Banner.webp" alt="Banner" class="imagem"> -->
             </section>
-            <section class="PadraoS">
+            <section class="PadraoS ">
+                <!-- Fica a section Ofertas do dia -->
                 <h3 class="areaO">OFERTAS DO DIA</h3>
                     <div class="cards">
                             <a href="#" class="ofertaD">
@@ -138,39 +137,33 @@
                             </a>
                     </div>
             </section>
-            <section class="PadraoS ">
+            <section class="PadraoS mercado">
+                <!-- Menu de categorias -->
                 <h3 class=" mercadoT">MERCADO</h3>
                 <div class="catpro">
-                        <div class="ns">
-                            <a href="#" class="grupo1">
-                                <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
-                                <p >Mercearia</p>
-                            </a>
-                        </div>
+                        <a href="#" class="grupo1">
+                            <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
+                            <p >Mercearia</p>
+                        </a>
 
-                        <div class="ns">
-                            <a href="#" class="grupo1">
-                                <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
-                                <p >Bebidas</p>
-                            </a>
-                        </div>
-
-                        <div class="ns">
-                            <a href="#" class="grupo1">
-                                <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
-                                <p >Produtos de limpeza</p>
-                            </a>
-                        </div>
-
-                        <div class="ns">
-                            <a href="#" class="grupo1">
-                                <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
-                                <p >Hortifruti</p>
-                            </a>
-                        </div>
+                        <a href="#" class="grupo1">
+                            <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
+                            <p >Bebidas</p>
+                        </a>
+                        
+                        <a href="#" class="grupo1">
+                            <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
+                            <p >Produtos de limpeza</p>
+                        </a>
+                        
+                        <a href="#" class="grupo1">
+                            <img src="img/supermercado.jpg" alt="supermercado" class="catimg">
+                            <p >Hortifruti</p>
+                        </a>
+                        
                 </div>
             </section>
-            <!-- Trocar as logos dos mercados parceiros -->
+            <!-- Redes que são parceiras -->
             <section class="PadraoS parceiros">
                 <h3 class="areaO">REDES PARCEIRAS</h3>
                 <div class="sparceiros">
@@ -189,6 +182,7 @@
 
     </main>
     <footer class="main-footer">
+        <!-- Footer contendo links de menu e contato -->
         <div class="footer-content container">
             <section class="logolink ">
                 <a href="#"><img src="img/LogoPromoVale_pequena.webp" alt="Logo LogoPromoVale_pequena" class="logof"></a>
@@ -214,6 +208,7 @@
         </div>
         
     </footer>
+    <!-- Conexão com o js -->
     <script src="interacoes.js"></script>
 </body>
 </html>

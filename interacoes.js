@@ -1,7 +1,7 @@
 //menu hamburguer
 function mudoutamanho(){
     let menumobile = document.querySelector('.nav-list-segunda') 
-    if(window.innerWidth >= 900){
+    if(window.innerWidth >= 700){
         menumobile.style.display = 'none'
     }
     }

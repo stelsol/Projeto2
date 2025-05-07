@@ -74,7 +74,7 @@ body a{
     display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     .buscar{
         display: none;
     }
@@ -135,7 +135,7 @@ body a{
 /* Carrossel */
 .carrossel {
     position: relative;
-    max-width: 100%;
+    /* max-width: 100%; */
     margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
@@ -234,12 +234,13 @@ body a{
 .cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 15px;
+    margin-bottom: 20px;
 }
 .ofertaD{
     /* background-color: var(--cor2); */
-    width: 15%;
+    width: 16%;
     /* height: 100px; */
     margin-top:10px;
 
@@ -286,7 +287,8 @@ body a{
     border-bottom: 2px solid var(--cor4);
     width:200px;
     padding-bottom: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 20px;
 }
 .mercadoT{
     width: 130px;
@@ -296,12 +298,17 @@ body a{
     margin-bottom: 10px;
 }
 /* Estilização Categorias */
+.mercado{
+    width: 100%;
+    
+}
 .catpro{
     display: flex;
-    align-items: start;
+    justify-content: space-evenly;
+    align-items: center;
     flex-flow: row wrap;
-    margin-top:10px;
-    gap: 2%;
+    margin-bottom: 20px;
+    /* margin-top:10px; */
 }
 .catpro p {
     color: var(--cor-preta);
@@ -311,9 +318,10 @@ body a{
 .grupo1{
     text-align: center;
     text-decoration: none;
+    margin-top: 15px;
 }
 .catimg{
-    width: 255px;
+    width: 252px;
     border-radius: 5px;
     box-shadow: 1px 2px 3px #00000044;
 }
@@ -353,7 +361,7 @@ body a{
     /* border-top: 2px solid #f2f2f228; */
 }
 .logof{
-    width: 80px;
+    width: 80%;
 }
 .footer-section{
     display: flex;
@@ -375,11 +383,50 @@ body a{
 .footer-links:hover{
     text-decoration: underline;
 }
-@media screen and (max-width: 900px) {
+/* Section media query */
+@media screen and (max-width: 700px) {
+    .Carrosel-w{
+        width: 100%;
+    }
     .container{
         width: 100%;
     }
     .PadraoS{
         margin: 10px 0px 0px 0px;
+    }
+    .ofertaD{
+        width: 40%;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+    .footer-section{
+        width: 50%;
+        padding-bottom: 35px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .footer-content{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .logof {
+        width: 100px;
+        
+    }
+    .footer-section .logolink{
+        padding-bottom: 35px;
+    }
+}
+@media screen and (min-width: 700px) {
+    .ofertaD{
+        width: 30%;
+    }
+}
+@media screen and (min-width: 900px) {
+    .ofertaD{
+        width: 15%;
     }
 }
