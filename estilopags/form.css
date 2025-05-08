@@ -27,7 +27,6 @@
     text-decoration: none;
     font-family: var(--fontsite);
     list-style: none;
-    color:var(--cor5) ;
 }
 html,body{
     width: 100vw;
@@ -35,7 +34,9 @@ html,body{
     background-color: var(--cor5);
     overflow-x: hidden;
 }
-
+header  a,footer a{
+    color:var(--cor5) ;
+}
 /* Estilização da Header */
 .menu{
     background-color: var(--cor1);
@@ -70,6 +71,7 @@ html,body{
     display: none;
 }
 
+/* media querys  */
 @media screen and (max-width: 700px) {
     .buscar{
         display: none;
@@ -116,94 +118,16 @@ html,body{
     /* main/largura do site  */
     background-color:var(--cor5);
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 60px;
-    padding-top: 100px;
     /* border: 1px solid black; */
 }
-.sobre-main{
+.formulario{
+    width: 70%;
     display: flex;
-    justify-content:center;
-    align-items: center;
-    /* padding: 10px; */
-    margin: 20px 0px 40px 0px;
-    /* background-color: var(--cor4); */
-}
-.empresa{
-    width: 60%;
-    
-}
-.titulo{
-    font-size: 2em;
-    color: var(--cor-preta);
-}
-
-.texto{
-    width: 80%;
-    text-align: justify;
-    text-indent: 30px;
-    margin: 10px 0px 30px 0px;
-    color: var(--cor-preta);
-}
-.texto-centro{
-    text-align: center;
-    margin-bottom: 10px;
-}
-.redes-sociais{
-    width: 30%;
-    display: flex;
-    gap: 20px;
-}
-/* marcas parceiras */
-.marcas-parceiras{
-    padding: 50px;
-    background-color: rgba(211, 211, 211, 0.274);
-}
-/* Marcas parceiras */
-.logos-p{
-    
-        /* background-color: var(--cor4); */
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 25px;
-}
-/* Formulario */
-.proposta{
-
-    /* text-align: center; */
-    background-color:var(--cor3);
-    /* border: 3px solid #052038; */
-    /* border-radius: 15px; */
-}
-.pre-form{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: start; */
-    align-items: center;
-    gap: 20px;
-    padding: 30px;
-}
-.pre-form h2{
-    color: var(--cor5);
-
-}
-.pre-form p{
-    width: 60%;
-    text-align: center;
-
-}
-.botao{
-    background-color: var(--cor1);
-    /* border: 2px solid #cc6d1b ; */
-    font-weight: bold;
-    border-radius: 15px;
-    padding: 20px;
-}
-.botao:hover{
-    background-color: #074173b7;
+    flex-flow: column nowrap;
+    border: 1px solid black;
 }
 /* Estilização Footer */
 .main-footer{
@@ -247,37 +171,7 @@ html,body{
 
 /* Media querys */
 @media screen and (max-width: 700px) {
-    .conteudo{
-        padding: 0;
-    }
     
-    .empresa{
-        width: 100%;
-        order: 2;
-    }
-    .texto{
-        width: 100%;
-    }
-    .titulo{
-        text-align: center;
-        padding: 10px;
-    }
-    .redes-sociais{
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    .promovale{
-        order: 1;
-        width: 70%;
-        padding-bottom: 20px;
-    }
-    .sobre-main{
-        flex-direction: column;
-    }
-    .pre-form p{
-        width: 100%;
-    }
     .footer-content{
         flex-wrap: wrap;
         align-items: center;

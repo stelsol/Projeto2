@@ -126,7 +126,7 @@ body a{
 }
 /* PadraoS = Configuração padrão para a section */
 .PadraoS{
-    /* width:100%; */
+    width:100%;
     margin: 20px;
     /* background-color: #000000; */
     display: flex;
@@ -147,7 +147,6 @@ body a{
     display: flex;
     transition: transform 0.8s ease-in-out;
 }
-
 
 .slide {
     min-width: 100%;
@@ -234,7 +233,7 @@ body a{
 .cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 15px;
     margin-bottom: 20px;
 }
@@ -297,14 +296,12 @@ body a{
     padding-bottom: 8px;
     margin-bottom: 10px;
 }
+
+
 /* Estilização Categorias */
-.mercado{
-    width: 100%;
-    
-}
 .catpro{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
     margin-bottom: 20px;
@@ -321,13 +318,15 @@ body a{
     margin-top: 15px;
 }
 .catimg{
-    width: 252px;
+    width: 350px;
     border-radius: 5px;
     box-shadow: 1px 2px 3px #00000044;
 }
 .catp{
     padding-top: 10px;
 }
+
+
 /* Estilização logo parceiros */
 .sparceiros{
     /* background-color: var(--cor4); */
@@ -345,6 +344,8 @@ body a{
     border-radius: 50%;
     box-shadow: 1px 2px 3px #00000044;
 } */
+
+
 /* Estilização Footer */
 .main-footer{
     background-color: var(--cor1);
@@ -361,7 +362,7 @@ body a{
     /* border-top: 2px solid #f2f2f228; */
 }
 .logof{
-    width: 80%;
+    width: 100%;
 }
 .footer-section{
     display: flex;
@@ -383,6 +384,8 @@ body a{
 .footer-links:hover{
     text-decoration: underline;
 }
+
+
 /* Section media query */
 @media screen and (max-width: 700px) {
     .Carrosel-w{
@@ -390,6 +393,18 @@ body a{
     }
     .container{
         width: 100%;
+    }
+    .cards{
+        justify-content: space-evenly;
+    }
+    .catpro{
+        justify-content: center;
+    }
+    .grupo1{
+        gap: 5px;
+    }
+    .catimg{
+        width: 250px;
     }
     .PadraoS{
         margin: 10px 0px 0px 0px;
@@ -406,8 +421,17 @@ body a{
         width: 50%;
         padding-bottom: 35px;
     }
+    .gmail{
+        font-size: 0.8rem;
+    }
 }
 @media screen and (max-width: 900px) {
+    .catpro{
+        justify-content: space-around;
+    }
+    .catimg{
+        width: 270px;
+    }
     .footer-content{
         flex-wrap: wrap;
         padding: 10px;

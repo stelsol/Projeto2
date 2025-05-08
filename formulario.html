@@ -6,7 +6,7 @@
     <title>Promovale</title>
     <link rel="shortcut icon" href="img/LogoPromoVale_pequena.webp" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="estilopags/sobrenos.css">
+    <link rel="stylesheet" href="estilopags/form.css">
     <!-- <link rel="stylesheet" href="responsivo.css" media="screen and (max-width: 600px)"> -->
 </head> 
 <body onresize=" mudoutamanho()">
@@ -43,50 +43,30 @@
     <main class="container">  
         <!-- O container esta conectado com o menu, podemos criar os conteudos tranquilamente -->
         <section class="conteudo">
-            <article class="sobre-main">
-                <div class="empresa">
-                    <h2 class="titulo">Nossa História</h2>
-                    <p class="texto ">Em meio à correria do dia a dia, percebemos o quanto era difícil encontrar as melhores ofertas sem precisar visitar mercado por mercado ou receber inúmeras mensagens confusas de promoções. Foi assim que nasceu o nosso projeto — com a vontade de facilitar a vida das pessoas na hora de economizar.
+            <form class="formulario">
+                <h3>Pré - Cadastro</h3>
 
-                    Criado por Talita, Lucas e Maria Eduarda, nosso site surgiu de uma simples conversa entre amigos que compartilhavam o mesmo desafio: como reunir todas as promoções de supermercados e mercadinhos de bairro em um só lugar, de forma prática e organizada?
-                        
-                    Com muito carinho, dedicação e a vontade de fazer a diferença, desenvolvemos uma plataforma que reúne as melhores ofertas, atualizadas constantemente, para que você economize tempo e dinheiro sem abrir mão da qualidade.
-                    <br>
-                    <br>Aqui, a sua economia é a nossa missão. Seja bem-vindo!</p>
-                    <div class="redes-sociais">
-                        <img src="img/redes-sociais/facebook40x40.webp" alt="insta">
-                        <img src="img/redes-sociais/instagram40x40.webp" alt="insta">
-                        <img src="img/redes-sociais/tiktok40x40.webp" alt="insta">
-                        <img src="img/redes-sociais/linkedin40x40.webp" alt="insta">
-                    </div>
-                </div>
-                <img src="img/redes-sociais/LogoPromoVale_350x350.webp" alt="nossa logo" class="promovale">
+                <label for="name-super">Nome da empresa: </label>
+                <input type="text" name="name-super" id="name-super" placeholder="Nome da empresa">
+
+                <label for="re-empresa">Nome do representante: </label>
+                <input type="text" name="re-empresa" id="re-empresa" placeholder="Nome completo">
+
+                <label for="email-em">E-mail:</label>
+                <input type="email" name="email-em" id="email-em" placeholder="Supermercado@mail.com">
+
+                <label for="contato">Telefone para contato: </label>
+                <input type="tel" name="contato" id="contato" placeholder="(xx) xxxx-xxxx">
+
+                <label for="adicional">Informações adicionais: </label>
+                <textarea name="adicional" id="adicional" cols="30" rows="5" placeholder="Digite Aqui..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
 
         </section>
         
     </main>
 </article>
-<article class="marcas-parceiras">
-    <h2 class=" texto-centro titulo">Redes Parceiras</h2>
-    <div class="logos-p">
-        <img src="img/70x56_carrefour.webp" alt="Logo carrefour" class="marca">
-        <img src="img/80x80_logo Max.webp" alt="" class="marca">
-        <img src="img/100x100_logo Tenda.webp" alt="" class="marca">
-        <img src="img/100x100_semar-supermercados-logo.webp" alt="" class="marca">
-        <img src="img/100x21_Extra_logo.webp" alt="" class="marca">
-        <img src="img/100x28_atacadao-logo.webp" alt="" class="marca">
-        <img src="img/100x28_logo Nagumo.webp" alt="" class="marca">
-        <img src="img/100X65_logo roldao.webp" alt="" class="marca">
-        <img src="img/100x75_Logo Shibata.webp" alt="" class="marca">
-    </div>
-</article>
-    <article class="proposta">
-        <div class="pre-form">
-            <h2 class="titulo">Junte - se a nós</h2>
-            <p>Quer anunciar as ofertas do seu mercado na PromoVale? Entre em contato conosco e alcance milhares de consumidores do Vale do Paraíba.</p>
-            <a href="formulario.html" class=" botao">Cadastrar - se</a>
-        </div>
-    </article>
     <footer class="main-footer">
         <div class="footer-content container">
             <section class="logolink ">
