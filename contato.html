@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Site HTML5</title>
+  </head>
+  <body class="bg-zinc-300">
+    <header class="w-full bg-zinc-950 fixed top-0 left-0 shadow-lg">
+      <div class="w-7xl mx-auto py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <div>
+          <h1 class="text-2xl font-bold text-white">Meu Site</h1>
+        </div>
+        <!-- Menu-nav -->
+        <nav class="flex gap-20 text-white">
+          <a href="index.html" class="hover:text-gray-200"> Home</a>
+          <a href="quemSomos.html" class="hover:text-gray-200"> Quem Somos</a>
+          <a href="servicos.html" class="hover:text-gray-200"> Serviços</a>
+          <a href="contato.html" class="hover:text-gray-200"> Contato</a>
+        </nav>
+        <!-- Perfil -->
+        <div class="flex gap-4">
+          <button
+            class="bg-linear-to-b from-cyan-400 to-blue-500 text-zinc-900 font-semibold px-4 py-2 rounded-md hover:brightness-110 transition-all cursor-pointer"
+          >
+            Login
+          </button>
+
+          <img
+            src="https://i.pravatar.cc/150?img=5"
+            alt="Foto de Perfil"
+            class="h-14 w-14 rounded-full"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteudo Principal -->
+    <main class="w-full mt-18">
+      <!-- Banner -->
+
+      <section class="w-full py-16 bg-zinc-800">
+        <div class="w-7xl mx-auto">
+          <div class="flex flex-col gap-3 mb-7">
+            <h2 class="text-4xl font-bold text-white text-center">
+              Fale Conosco
+            </h2>
+            <p class="text-center text-gray-400">
+              Estamos Prontos para ajudar no seu projeto
+            </p>
+          </div>
+
+          <!-- Fases -->
+
+
+            <div class=" w-full flex  ">
+              <div class="w-full flex  justify-between text-gray-300 gap-3"> 
+                <div class="w-8/12 ">
+                    <form class=" w-200 h-105 p-5 rounded-md bg-zinc-900 flex flex-col justify-start items-center gap-3">
+                    <div class=" w-full flex justify-between gap-2 ">
+                      <input  class="w-93 p-2 bg-zinc-700 border rounded-sm  border-zinc-600" type="text" name="name" id="name" placeholder="Nome">
+                      <input  class="w-93 p-2 bg-zinc-700 border rounded-sm  border-zinc-600" type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <input class="w-full p-2 bg-zinc-700 border rounded-md  border-zinc-600" type="text" name="assunto" id="assunto" placeholder="Assunto">
+                    <textarea class="w-full  p-2 bg-zinc-700 border rounded-md  border-zinc-600" name="mensagem" rows="5" id="mensagem" placeholder="Mensagem"></textarea>
+                    <button class="w-full bg-linear-to-b from-cyan-400 to-blue-500 text-zinc-900 font-semibold px-4 py-2 rounded-md hover:brightness-110 transition-all cursor-pointer">Enviar Mensagem</button>
+                  </form>
+                </div>
+                <div class="w-5/12 flex flex-col justify-between gap-3">
+                  <div class=" cards  rounded-md  flex flex-col justify-center  gap-3">
+                      <div class="cards p-5 rounded-md bg-zinc-900 flex flex-col   gap-3">
+                        <h1 class="text-2xl font-bold">Contato</h1>
+
+                        <div class="bg-zinc-900">
+                            <p class=" mb2">
+                              <i class="bi bi-whatsapp"></i> (12) X XXXX-XXXX
+                            </p>
+                            
+                            <p >
+                              <i class="bi bi-envelope"></i> Entreemcontato@chanel.com
+                            </p>
+                            <p >
+                              <i class="bi bi-geo-alt"></i> Rua Não sei , n°250 - taubaté/sp
+                            </p>
+                        </div>
+                      </div>
+                      <div class="cards p-5 rounded-md bg-zinc-900 flex flex-col justify-center  gap-3">
+                        <div class="font-bold text-2xl">
+                          <h1>Redes Sociais</h1>
+                        </div>
+                        <div class="text-white">
+                          <ul class="flex gap-6">
+                            <li><i class="bi bi-whatsapp text-1xl"></i></li>
+                            <li><i class="bi bi-instagram text-1xl"></i></li>
+                            <li><i class="bi bi-twitter text-1xl"></i></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="cards p-5 rounded-md bg-zinc-900 flex flex-col justify-center items-center gap-3">
+                        <h1 class="text-2xl font-bold">Atendimento</h1>
+
+                        <div class="bg-zinc-900 text-center">
+                            <p >
+                              Seg - Sex 
+                            </p>
+                            <p >
+                              08:00 às 18:00
+                            </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="w-full py-16 bg-cyan-400">
+        <div
+          class="w-7xl mx-auto flex flex-col items-center gap-6 text-gray-900"
+        >
+          <div>
+            <h2 class="text-4xl font-bold">Pronto para começar ?</h2>
+          </div>
+          <div>
+            <p>Entre em contato e vamos tirar suas ideias do papel</p>
+          </div>
+          <div>
+            <button
+              class="px-4 py-2 bg-linear-to-b from-zinc-600 to-zinc-900 text-gray-100 font-semibold rounded-md hover:brightness-110 transition-all cursor-pointer"
+            >
+              Solicitar Orçamento
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Maps -->
+      <section class="w-full bg-cyan-400">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9870052103893!2d-45.58438422380326!3d-23.0242493420813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccf8675370199b%3A0x26b086d017a216fd!2sTaubat%C3%A9%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1780054981520!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <!-- Rodapé -->
+
+      <footer class="w-full py-16 bg-zinc-950">
+        <section class="w-7xl mx-auto flex items-center justify-between gap-2">
+          <div class="w-1/4 flex gap-6 flex-col items-start justify-between">
+            <div>
+              <h1 class="text-2xl font-bold text-white">Meu Site</h1>
+            </div>
+            <div class="text-white">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="text-white">
+              <ul class="flex gap-6">
+                <li><i class="bi bi-whatsapp"></i></li>
+                <li><i class="bi bi-instagram"></i></li>
+                <li><i class="bi bi-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-1/4 flex flex-col gap-3">
+            <div>
+              <h5 class="text-2xl font-bold text-white">Navegação</h5>
+            </div>
+            <div class="text-white">
+              <ul class="flex flex-col gap-1 text-gray-400">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quemSomos.html">Quem Somos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-1/4 flex flex-col gap-3">
+            <div>
+              <h5 class="text-2xl font-bold text-white">Empresa</h5>
+            </div>
+            <div class="text-white">
+              <ul class="flex flex-col gap-1 text-gray-400">
+                <li>Carreiras</li>
+                <li>Blog</li>
+                <li>Privacidade</li>
+                <li>Termos</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-1/4 flex flex-col gap-3">
+            <div>
+              <h5 class="text-2xl font-bold text-white">Newsletter</h5>
+            </div>
+            <div class="text-white">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu e-mail"
+                class="px-4 py-2 rounded-l-lg border-2 border-gray-300/50 focus:border-zinc-100 text-gray-400"
+              />
+              <button
+                class="rounded-r-lg border-2 border-zinc-800 bg-zinc-800 hover:bg-zinc-700 bg-linear-to-b from-cyan-400 to-blue-500 text-zinc-900 font-semibold px-4 py-2 hover:brightness-110 transition-all cursor-pointer"
+              >
+                Ok
+              </button>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>
