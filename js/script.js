@@ -28,3 +28,9 @@ async function CovrMenu() {
   });
 }
 CovrMenu();
+
+/* Fazer o menu sumir e aparecer
+
+1- precisamos acionar e dsacionar o translate
+2- o Overlay tbm 
+*/
