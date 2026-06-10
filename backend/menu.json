@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Home",
+    "link": "index.html",
+    "active": true,
+    "external": false,
+    "icon": "bi-house"
+  },
+  {
+    "id": 2,
+    "title": "Quem somos",
+    "link": "quemsomos.html",
+    "active": true,
+    "external": false,
+    "icon": "bi-info-circle"
+  },
+  {
+    "id": 3,
+    "title": "Serviços",
+    "link": "servicos.html",
+    "active": true,
+    "external": false,
+    "icon": "bi-info-circle"
+  },
+  {
+    "id": 4,
+    "title": "Contato",
+    "link": "contato.html",
+    "active": true,
+    "external": false,
+    "icon": "bi-envelope"
+  },
+  {
+    "id": 5,
+    "title": "Área Restrita (Promoções)",
+    "link": "admin.html",
+    "active": false,
+    "external": false,
+    "icon": "bi-lock"
+  }
+]

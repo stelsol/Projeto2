@@ -47,15 +47,17 @@
       <!-- Quem somos -->
 
       <section class="w-full py-16">
-        <div class="w-7xl mx-auto flex gap-10">
-          <div class="w-1/2 flex items-center">
+        <div
+          class="w-full xl:w-7xl mx-auto flex flex-col xl:flex-row gap-10 p-4 xl:p-0"
+        >
+          <div class="w-full xl:w-1/2 flex items-center">
             <img
               src="https://picsum.photos/1920/1080"
               alt="imagem"
-              class="rounded-2xl"
+              class="rounded-2xl object-cover h-full xl:h-100"
             />
           </div>
-          <div class="w-1/2 flex flex-col justify-center gap-4">
+          <div class="w-full xl:w-1/2 flex flex-col justify-center gap-4">
             <div>
               <div>
                 <h2 class="text-3xl font-bold mb-2">Quem Somos</h2>
@@ -97,47 +99,49 @@
 
       <!-- serviços -->
       <section class="w-full py-16 bg-zinc-700">
-        <div class="w-7xl mx-auto">
+        <div class="w-full xl:w-7xl flex flex-col mx-auto">
           <div class="pb-5">
             <h2 class="text-center text-2xl font-bold mb-2 text-white">
               Missão, Visão e Valores
             </h2>
           </div>
-
-          <div class="grid grid-cols-3 gap-6 text-gray-300">
+          <div>
             <div
-              class="bg-zinc-800 rounded-lg p-6 text-center hover:bg-zinc-600/50 transition-transform duration-300 hover:scale-105 cursor-pointer"
+              class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-4 xl:p-0 gap-6 text-gray-300"
             >
-              <i class="bi bi-bullseye text-3xl text-cyan-400"></i>
-              <h3 class="text-lg font-semibold mb-2">Missão</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Similique, labore?
-              </p>
-            </div>
+              <div
+                class="bg-zinc-800 rounded-lg p-6 text-center hover:bg-zinc-600/50 transition-transform duration-300 hover:scale-105 cursor-pointer"
+              >
+                <i class="bi bi-bullseye text-3xl text-cyan-400"></i>
+                <h3 class="text-lg font-semibold mb-2">Missão</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Similique, labore?
+                </p>
+              </div>
 
-            <div
-              class="bg-zinc-800 rounded-lg p-6 text-center hover:bg-zinc-600/50 transition-transform duration-300 hover:scale-105 cursor-pointer"
-            >
-              <i class="bi bi-eye text-3xl text-cyan-400"></i>
-              <h3 class="text-lg font-semibold mb-2">Visão</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                fugit.
-              </p>
-            </div>
+              <div
+                class="bg-zinc-800 rounded-lg p-6 text-center hover:bg-zinc-600/50 transition-transform duration-300 hover:scale-105 cursor-pointer"
+              >
+                <i class="bi bi-eye text-3xl text-cyan-400"></i>
+                <h3 class="text-lg font-semibold mb-2">Visão</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, fugit.
+                </p>
+              </div>
 
-            <div
-              class="bg-zinc-800 rounded-lg p-6 gap-3 text-center hover:bg-zinc-600/50 transition-transform duration-300 hover:scale-105 cursor-pointer"
-            >
-              <!-- eyes
-             bullseye -->
-              <i class="bi bi-heart text-3xl text-cyan-400"></i>
-              <h3 class="text-lg font-semibold mb-2">Valores</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus, sed.
-              </p>
+              <div
+                class="bg-zinc-800 rounded-lg p-6 gap-3 text-center hover:bg-zinc-600/50 transition-transform duration-300 hover:scale-105 cursor-pointer"
+              >
+                <!-- eyes bullseye -->
+                <i class="bi bi-heart text-3xl text-cyan-400"></i>
+                <h3 class="text-lg font-semibold mb-2">Valores</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus, sed.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -148,8 +152,10 @@
       <!-- Rodapé -->
 
       <footer class="w-full py-16 bg-zinc-950">
-        <section class="w-7xl mx-auto flex items-center justify-between gap-2">
-          <div class="w-1/4 flex gap-6 flex-col items-start justify-between">
+        <section
+          class="w-full xl:w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-center flex-wrap xl:flex-nowrap xl:items-start justify-between p-4 xl:p-0 gap-6"
+        >
+          <div class="flex gap-6 flex-col items-start justify-between">
             <div>
               <h1 class="text-2xl font-bold text-white">Meu Site</h1>
             </div>
@@ -165,7 +171,7 @@
             </div>
           </div>
 
-          <div class="w-1/4 flex flex-col gap-3">
+          <div class="flex flex-col gap-3">
             <div>
               <h5 class="text-2xl font-bold text-white">Navegação</h5>
             </div>
@@ -179,7 +185,7 @@
             </div>
           </div>
 
-          <div class="w-1/4 flex flex-col gap-3">
+          <div class="flex flex-col gap-3">
             <div>
               <h5 class="text-2xl font-bold text-white">Empresa</h5>
             </div>
@@ -193,7 +199,7 @@
             </div>
           </div>
 
-          <div class="w-1/4 flex flex-col gap-3">
+          <div class="flex flex-col gap-3">
             <div>
               <h5 class="text-2xl font-bold text-white">Newsletter</h5>
             </div>

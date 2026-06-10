@@ -1,0 +1,24 @@
+{
+  "name": "projeto2",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido com o objetivo de praticar e consolidar conhecimentos em desenvolvimento Front-End, utilizando HTML, Tailwind CSS e Bootstrap Icons para a criação de uma landing page moderna e responsiva.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stelsol/Projeto2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/stelsol/Projeto2/issues"
+  },
+  "homepage": "https://github.com/stelsol/Projeto2#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
